@@ -1,5 +1,5 @@
 .section-one {
-    padding-top: 60px;
+    margin-top: 60px;
 }
 
 h1 {
@@ -10,13 +10,13 @@ h1 {
 }
 
 h2 {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     font-size: 44px;
     font-weight: 700;
   }
   
   h3 {
-    padding-bottom: 39px;
+    margin-bottom: 39px;
     font-size: 36px;
     font-weight: 900;
   }
@@ -28,22 +28,26 @@ h2 {
     line-height: 120%;
   }
 
+  li {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
 
-.container__background {
+.section-two__background, .section-six__background {
     padding: 25px 40px 25px 45px;
     background-color: #F1F1F1;
 }
 
 .section-two__li {
-    margin-top: 11px;
+    margin-bottom: 11px;
     font-size: 20px;
     font-weight: 400;
     line-height: 120%;
     color: #02535F;
 }
 
-.section-two__li:first-of-type {
-    margin-top: 0;
+.section-two__li:last-of-type {
+    margin-bottom: 0;
 }
 
 .section-three__block-one {
@@ -79,7 +83,7 @@ h2 {
 }
 
 .section-six__text  {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .section-six__text p {
