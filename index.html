@@ -39,20 +39,26 @@
       </section>
 
       <section class="section-two">
-        <div class="container section-two__background">
+        <nav class="container section-two__background">
           <h2>Содержание:</h2>
           <ol>
             <li class="section-two__li">
-              <a href="#section-three">Отступ задается от предыдущего элемента к следующему</a>
+              <a href="#section-three"
+                >Отступ задается от предыдущего элемента к следующему</a
+              >
             </li>
             <li class="section-two__li">
-              <a href="#section-four">Отступ задается последнему возможному элементу в DOM-дереве</a>
+              <a href="#section-four"
+                >Отступ задается последнему возможному элементу в DOM-дереве</a
+              >
             </li>
             <li class="section-two__li">
-              <a href="#section-five">Для последнего элемента группы отступ обнуляется</a>
+              <a href="#section-five"
+                >Для последнего элемента группы отступ обнуляется</a
+              >
             </li>
           </ol>
-        </div>
+        </nav>
       </section>
 
       <section class="section-three" id="section-three">
@@ -63,7 +69,11 @@
           </h3>
 
           <div class="section-three__block-one">
-            <img class="section-three__img-one" src="img/image1.jpg" alt="Пример отсутпа" />
+            <img
+              class="section-three__img-one"
+              src="img/image1.jpg"
+              alt="Пример отсутпа"
+            />
             <div>
               <p>
                 ВАЖНО: <i>margin</i> всегда задают от предыдущего элемента к
@@ -88,20 +98,25 @@
 
           <div class="section-three__block-two">
             <div>
-                <p>
-                    Отступ внутри блока сверху или слева реализуется через
-                    <i>padding-top</i> и <i>padding-left</i> родителя.
-                  </p>
-                  <p>
-                    Отступы, как правило, делают в направлении от предыдущего элемента
-                    к следующему. Так элемент не будет толкать сам себя.
-                  </p>
-                  <p class="last-elem">
-                    Изначально элемент статичен, а его положение может меняться только
-                    под воздействием свойств других блоков или свойств родителя.
-                  </p>
+              <p>
+                Отступ внутри блока сверху или слева реализуется через
+                <i>padding-top</i> и <i>padding-left</i> родителя.
+              </p>
+              <p>
+                Отступы, как правило, делают в направлении от предыдущего
+                элемента к следующему. Так элемент не будет толкать сам себя.
+              </p>
+              <p class="last-elem">
+                Изначально элемент статичен, а его положение может меняться
+                только под воздействием свойств других блоков или свойств
+                родителя.
+              </p>
             </div>
-            <img class="section-three__img-two" src="img/image2.jpg" alt="Пример отсутпа" />
+            <img
+              class="section-three__img-two"
+              src="img/image2.jpg"
+              alt="Пример отсутпа"
+            />
           </div>
         </div>
       </section>
@@ -115,13 +130,29 @@
               Вообще, margin задают исключительно между соседними элементами
               DOM-дерева. Для примера, посмотрите на этот список:
             </p>
-            <img class="section-four__img" src="img/image3.jpg" alt="Пример кода со списком" />
-            <img class="section-four__img"  src="img/image4.jpg" alt="Результат кода" />
-            <p>Отступ делают за счёт соседних элементов, а не дочерних:</p>
-            <img class="section-four__img"
-              src="img/image5.jpg"
-              alt="Пример кода с оформленными отступами"
+            <img
+              class="section-four__img"
+              src="img/image3.jpg"
+              alt="Пример кода со списком"
             />
+            <img
+              class="section-four__img"
+              src="img/image4.jpg"
+              alt="Результат кода"
+            />
+            <p>Отступ делают за счёт соседних элементов, а не дочерних:</p>
+            <figure class="section-four__figure">
+              <img
+                class="section-four__img"
+                src="img/image5.jpg"
+                alt="Пример кода с оформленными отступами"
+              />
+              <figcaption class="section-four__caption">
+                <strong>ВАЖНО</strong>: здесь <i>.list-item</i> — последний
+                возможный элемент в котором мы задаём отступ, чтобы разделить
+                списки.
+              </figcaption>
+            </figure>
             <p>
               Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо
               обёртке <i>&lt;article&gt;</i> для достижения той же цели. Внешне
@@ -131,14 +162,22 @@
               Предыдущий пример был достаточно простым, но бывает вложенность
               значительно больше.
             </p>
-            <img class="section-four__img"  src="img/image6.jpg" alt="Пример кода" />
+            <img
+              class="section-four__img"
+              src="img/image6.jpg"
+              alt="Пример кода"
+            />
             <p>
               В случае с заголовком, если ему необходим отступ сверху, последним
               элементом будет <i>section</i>. Именно для него задается
               <i>padding-top</i>, а не div с классом <i>container</i>. Свойства
               <i>margin</i>, которые стоят по умолчанию необходимо обнулить.
             </p>
-            <img class="section-four__img"  src="img/image7.jpg" alt="Пример когда с отступом" />
+            <img
+              class="section-four__img"
+              src="img/image7.jpg"
+              alt="Пример когда с отступом"
+            />
             <p class="last-elem">
               Это необходимо для более простого поиска отступов в будущем — для
               вас или того, кто будет верстать после вас. Кроме того, возможны
@@ -157,7 +196,11 @@
             Между рецептами расстояние одинаковое. Можно заметить, что и до
             следующего блока расстояние такое же.
           </p>
-          <img class="section-five__img" src="img/image8.jpg" alt="Пример отступов" />
+          <img
+            class="section-five__img"
+            src="img/image8.jpg"
+            alt="Пример отступов"
+          />
           <p>
             В соответствии со вторым принципом: последний
             <i>margin</i> обнуляется, а нижний отступ задаётся через
@@ -167,18 +210,34 @@
             <i>padding-bottom:50px</i>.
           </p>
           <img class="section-five__img" src="img/image9.jpg" alt="" />
-          <img class="section-five__img" src="img/image10.jpg" alt="Пример кода" />
+          <img
+            class="section-five__img"
+            src="img/image10.jpg"
+            alt="Пример кода"
+          />
           <p>
             Для большего понимания рассмотрим другой пример, который часто
             встречается на практике:
           </p>
-          <img class="section-five__img" src="img/image12.jpg" alt="Пример меню" />
-          <img class="section-five__img" src="img/image13.jpg" alt="Пример кода" />
+          <img
+            class="section-five__img"
+            src="img/image12.jpg"
+            alt="Пример меню"
+          />
+          <img
+            class="section-five__img"
+            src="img/image13.jpg"
+            alt="Пример кода"
+          />
           <p>
             Здесь нас интересует отступ между пунктами меню и списком с кнопкой
             поиска. Отступы между пунктами меню задаются так:
           </p>
-          <img class="section-five__img" src="img/image14.jpg" alt="Пример кода" />
+          <img
+            class="section-five__img"
+            src="img/image14.jpg"
+            alt="Пример кода"
+          />
           <p>
             Советую использовать псевдоклассы :last-child чаще других, например
             так:
@@ -191,13 +250,21 @@
         <div class="container section-six__background">
           <h2>Подытожим:</h2>
           <div class="section-six__text">
-            <p>— отступы задаём от предыдущего элемента к следующему</p>
-            <p>— используем только margin-right и margin-bottom</p>
-            <p>— внешние отступы задаются только между соседями</p>
-            <p>
+            <p class="section-six__elem">
+              — отступы задаём от предыдущего элемента к следующему
+            </p>
+            <p class="section-six__elem">
+              — используем только margin-right и margin-bottom
+            </p>
+            <p class="section-six__elem">
+              — внешние отступы задаются только между соседями
+            </p>
+            <p class="section-six__elem">
               — внутренний отступ задаём самому верхнему элементу в дом дереве
             </p>
-            <p class="last-elem">— последнему элементу группы отступ всегда обнуляем</p>
+            <p class="section-six__elem last-elem">
+              — последнему элементу группы отступ всегда обнуляем
+            </p>
           </div>
           <p class="last-elem">
             Конечно бывают исключения. Ведь макеты бывают различной сложности.
